@@ -1,0 +1,118 @@
+.box-text {
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.box-input, .box-input2, .box-input3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(17.33deg 71.43% 49.41%);
+  padding-left: 12px;
+  color: white;
+}
+
+#content-checkbox {
+  display: none;
+}
+
+.box-input label {
+  padding: 10px 0 10px 0;
+}
+
+label .cong, label .tru {
+  font-size: 12px;
+}
+
+label .tru {
+  display: none;
+}
+
+#content-checkbox:checked + label .cong {
+  display: none;
+}
+
+#content-checkbox:checked + label .tru {
+  display: inline-block;
+}
+
+.box-paragraph {
+  margin-left: 12px;
+  font-size: 12px;
+  display: none;
+}
+
+.box-input:has(#content-checkbox:checked) ~ .box-paragraph {
+  display: block;
+}
+
+/* Title 2 */
+#content-checkbox2 {
+  display: none;
+}
+
+.box-input2 label {
+  padding: 10px 0 10px 0;
+}
+
+label .cong2, label .tru2 {
+  font-size: 12px;
+}
+
+label .tru2 {
+  display: none;
+}
+
+#content-checkbox2:checked + label .cong2 {
+  display: none;
+}
+
+#content-checkbox2:checked + label .tru2 {
+  display: inline-block;
+}
+
+.box-paragraph2 {
+  margin-left: 12px;
+  font-size: 12px;
+  display: none;
+}
+
+.box-input2:has(#content-checkbox2:checked) ~ .box-paragraph2 {
+  display: block;
+}
+
+/* Title 3 */
+#content-checkbox3 {
+  display: none;
+}
+
+.box-input3 label {
+  padding: 10px 0 10px 0;
+}
+
+label .cong3, label .tru3 {
+  font-size: 13px;
+}
+
+label .tru3 {
+  display: none;
+}
+
+#content-checkbox3:checked + label .cong3 {
+  display: none;
+}
+
+#content-checkbox3:checked + label .tru3 {
+  display: inline-block;
+}
+
+.box-paragraph3 {
+  margin-left: 12px;
+  font-size: 12px;
+  display: none;
+}
+
+.box-input3:has(#content-checkbox3:checked) ~ .box-paragraph3 {
+  display: block;
+}

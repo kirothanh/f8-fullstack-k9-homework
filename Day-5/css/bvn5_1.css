@@ -1,0 +1,42 @@
+
+
+.img-main {
+  position: relative;
+  background-image: url('../img/reactImage.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 500px;
+}
+
+.img-main img {
+  width: 1000px;
+}
+
+.box {
+  position: absolute;
+  width: 290px;
+  height: 200px;
+  background: #ddd;
+  text-align: center;
+  top: 18%;
+  left: 36%;
+  opacity: 0.6;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.text1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text2 {
+  font-size: 9px;
+  margin-top: -12px;
+  font-weight: 900;
+}
+
+.text2 span {
+  text-decoration: underline;
+}
