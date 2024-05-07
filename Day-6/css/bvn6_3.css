@@ -1,0 +1,74 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phan-dau {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.phan-dau .image img {
+  width: 100px;
+}
+
+.phan-dau .cate {
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 8px 15px 8px 15px;
+  border-radius: 9999px;
+  height: 15px;
+  background: #ddd;
+}
+
+.phan-dau .cate p {
+  font-size: 14px;
+}
+
+.phan-dau .icon {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.phan-than ul {
+  list-style: none;
+  display: flex;
+}
+
+.phan-than ul li {
+  margin-right: 20px;
+}
+
+.phan-than ul span {
+  font-size: 14px;
+}
+
+.phan-than ul i {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.phan-cuoi {
+  margin-right: 20px;
+}
+
+.phan-cuoi button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #3257ef, #bb6de8);
+  color: white;
+  font-size: 14px;
+}
