@@ -1,0 +1,212 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  background-image: url("../img/nen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;   */
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  /* background: #000; */
+}
+
+.container .phan-trai {
+  width: 500px;
+  height: 100%;
+  background: #ff574d;
+  color: white;
+  text-align: center;
+  text-wrap: wrap;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.phan-trai .arrow-right {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%); 
+  color: #ff574d;
+  background: white;
+  padding: 7px 10px 7px 10px;
+  border-radius: 60%;
+  font-size: 12px;
+  box-shadow: 8px 0 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.phan-trai .box-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+.box-title span {
+  background: gray;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-right: 7px;
+  font-size: 22px;
+  background: white;
+  color: #ff574d;
+}
+
+.phan-trai .box-title p {
+  display: inline-block;
+}
+
+.phan-trai .paragraph {
+  margin: 15px 15px;
+}
+
+.phan-trai .btn {
+  border: none;
+  color: #ff574d;
+  background: white;
+  width: 120px;
+  height: 30px;
+  border-radius: 2px;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.phan-trai .icon-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phan-trai .icon-box i {
+  width: 12px;
+  margin: 5px;
+  background: rgba(128, 128, 128, 0.263);
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.container .phan-phai {
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.phan-phai .login-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 40px;
+  color: #272323;
+}
+
+.phan-phai .login-title span {
+  color: #ff574d;
+}
+
+.phan-phai .border-title {
+  border-top: 2px solid #ff574d;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.phan-phai .input-email {
+  display: block;
+  width: 80%;
+  border: 1px solid gray;
+  outline: none;
+  height: 30px;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.phan-phai .input-email::placeholder {
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+.phan-phai .input-pass {
+  display: block;
+  width: 80%;
+  border: 1px solid gray;
+  outline: none;
+  height: 30px;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.phan-phai .input-pass::placeholder {
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+.phan-phai .boc-phai {
+  width: 100%;
+}
+
+.phan-phai .login-acpt {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phan-phai .login-acpt .confirm {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.phan-phai .login-acpt p {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.phan-phai .btn-login {
+  width: 82%;
+  margin: 0 auto;
+  border: none;
+  padding: 13px;
+  background: #ff574d;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.phan-phai .text-end {
+  font-size: 14px;
+}
+
+.phan-phai .text-end span {
+  cursor: pointer;
+}

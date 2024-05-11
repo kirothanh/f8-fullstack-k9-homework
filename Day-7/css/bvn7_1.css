@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  list-style: none;
+  font-size: 0;
+}
+
+.container li {
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+}
+
+.container li a {
+  text-decoration: none;
+  color: black
+}
+
+.container .star {
+  padding: 6px 14px;
+  border-left: 1px solid black;
+  height: 100%;
+}
+
+.container .star:nth-child(5) {
+  border-right: 1px solid black;
+}
+
+.container .star a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 13px;
+}
+
+.container .star a:hover {
+  color: white;
+  background: #2da5da;
+}
+
+.container .star a i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.container .contact {
+  padding: 6px 14px;
+  margin-left: auto;
+  border-left: 1px solid black;
+  height: 100%;
+}
+
+.container .contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 13px;
+}
+
+.container .contact a:hover {
+  color: white;
+  background: #2da5da;
+}
+
+.container .contact a i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+ul.box {
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: #fff; 
+  box-shadow: rgba(0, 0, 0, 0.631) 0px 5px 15px;
+  z-index: 1;
+  width: 170%;
+}
+
+ul.box li {
+  display: flex;
+  justify-content: left;
+  border-bottom: 1px solid rgb(189, 185, 185);
+  width: 100%;
+  padding: 10px 30px 10px 0px;
+}
+
+ul.box li:last-child {
+  border: none;
+}
+
+
+li.star:hover > ul.box {
+  display: block;
+}
+
+.triangle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 20px solid;
+  border-color: transparent transparent #fff transparent;
+  border-top: none;
+  border-top-width: 0;
+  margin-top: -10px;
+  margin-left: 20px;
+}
