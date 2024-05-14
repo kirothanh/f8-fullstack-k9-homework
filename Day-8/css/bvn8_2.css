@@ -1,0 +1,81 @@
+body {
+  font-family: "Asap", sans-serif;
+  font-style: normal;
+}
+
+.banner {
+  background-image: url("../img/banner2.jpg");
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 0;
+}
+
+.box-title {
+  position: absolute;
+  font-size: 16px;
+  width: 50%;
+  left: 100px;
+  bottom: 0;
+  display: flex;
+  color: white;
+}
+
+.box-title .logo {
+  background: white;
+  padding: 20px 20px 5px 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.box-title .desc h1 {
+  font-size: 22px;
+  margin: 20px 0px 30px 20px;
+  text-transform: uppercase;
+}
+
+.box-title .desc .year {
+  display: flex;
+  margin-left: 20px;
+}
+
+.desc .year p {
+  font-size: 14px;
+  margin-right: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.desc .year p span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  right: 30px;
+}
+
+.menu li {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: #bf4240;
+  border-bottom: 3px solid #bf4240;
+}
