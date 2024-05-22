@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  margin: 20px auto;
+  font-size: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container .box {
+  width: 50%;
+  margin-right: 150px;
+}
+
+.container .left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.left .text {
+  margin-right: 10px;
+}
+
+.left h3 {
+  font-size: 24px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.left .desc {
+  display: block;
+  text-wrap: wrap;
+  width: 300px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.left .name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #97979a;
+  background: #a5a1a148;
+  padding: 3px 14px;
+  border-radius: 9999px;
+  transition: 0.5s ease-in-out;
+}
+
+.text h3:hover ~ .name {
+  background: #a26f5a;
+  color: white;
+}
+
+.text .desc:hover ~ .name {
+  background: #a26f5a;
+  color: white;
+}
+
+.left .name:hover {
+  background: #a26f5a;
+  color: white;
+}
+
+.left .circle {
+  position: relative;
+  margin-right: 10px;
+  font-size: 8px;
+  color: #128d79;
+  background: #a5a1a148;
+  padding: 8px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.left .vien {
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  background: rgba(128, 128, 128, 0.275);
+  margin-top: 12px;
+  margin-left: 3px;
+}
+
+.left .year {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.container .right {
+  width: 50%;
+  margin-left: 100px;
+}
+
+.container .main {
+  position: relative;
+  display: block;
+  background-image: url("../img/bg-right.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 300px;
+}
+
+.right .bg-imageSub {
+  position: absolute;
+  display: block;
+  background-image: url("../img/bg-sub.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  margin-left: -50%;
+  margin-top: 50%;
+}
+
+.right .background-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00f;
+  width: 80%;
+  height: 90%;
+}
+
+.right h1 {
+  background-image: url("../img/bg-sub.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  position: absolute;
+  font-size: 20px;
+  color: rgb(215, 210, 210);
+  font-weight: 400;
+  bottom: 10px;
+  right: 10px;
+} 

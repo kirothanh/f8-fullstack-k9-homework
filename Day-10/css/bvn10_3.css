@@ -1,0 +1,166 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  width: 1000px;
+}
+
+.main-title {
+  font-size: 45px;
+}
+
+.desc {
+  margin-top: 30px;
+}
+
+.form {
+  margin: 30px auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 2px 8px rgba(176, 176, 176, 0.369);
+}
+
+.input-wrap .inputFN {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(136, 135, 135, 0.187);
+  padding: 25px 0 0 20px;
+  border-radius: 15px;
+}
+
+.input-wrap .selectInput {
+  display: block;
+  width: 100%;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgba(136, 135, 135, 0.63);
+  padding: 0 20px; 
+  border-radius: 15px;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  font-size: 16px;
+  color: #c3c0c8;
+
+}
+
+.input-wrap .down {
+  position: absolute;
+  left: 95%;
+  font-size: 12px;
+  color: #a8a8aa;
+}
+
+input:focus {
+  background: #edf0ff;
+  border: 1px solid green;
+}
+
+.input-wrap .text-corner {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 20px;
+  transition: top 0.3s ease-in;
+  display: flex;
+  color: #c3c0c8;
+}
+
+.text-corner i {
+  font-size: 5px;
+  padding-bottom: 20px;
+}
+
+.inputFN:focus {
+  border: 1px solid gray;
+}
+
+.inputFN:focus ~ .text-corner {
+  padding-top: 5px;
+  top: 0;
+}
+
+.row-bottom {
+  display: grid;
+  grid-template-columns: repeat(1, 1000px);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.textarea-wrap {
+  position: relative;
+}
+
+.textarea-message {
+  height: 100px;
+  width: 102%;
+  border: 1px solid rgba(136, 135, 135, 0.189);
+  resize: none;
+  border-radius: 15px;
+  padding: 20px;
+  outline: none;
+}
+
+.row-bottom .message {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 20px;
+  transition: top 0.3s ease-in;
+  display: flex;
+  color: #c3c0c8;
+}
+
+.textarea-message:focus ~ .message {
+  padding-top: 5px;
+  top: 0;
+}
+
+.textarea-message:focus {
+  border: 1px solid gray;
+}
+
+.message i {
+  font-size: 5px;
+  padding-bottom: 20px;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.form-btn button{
+  display: inline-block;
+  margin: 5px auto;
+  border: none;
+  background-color: #4d77d8;
+  padding: 12px 20px;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Box Shadow: độ lệch ngang | độ lệch dọc | bán kính mờ | bk lan rộng | màu sắc 
+*/
