@@ -1,0 +1,115 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #12a1e5;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+.main-title {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: right;
+}
+
+.main-title h1 {
+  font-weight: bold;
+}
+
+.main-title span {
+  font-weight: 100;
+  font-size: 2.6rem;
+}
+
+.icon-bar, .icon-arrow {
+  position: absolute;
+  font-size: 36px;
+  top: 23px;
+  left: 25px;
+  color: #12a1e5;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+}
+
+.icon-bar {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.icon-arrow {
+  visibility: hidden;
+  transition-property: transform, visibility;
+  transition: 0.2s ease;
+}
+
+#checkIcon:checked ~ label > .icon-bar {
+  opacity: 0;
+}
+
+#checkIcon:checked ~ label > .icon-arrow {
+  visibility: visible;
+  transform: rotate(180deg);
+}
+
+.overlay {
+  position: absolute;
+  top: -100px;
+  left: -90px;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: scale 0.5s ease;
+}
+
+#checkIcon:checked ~ .overlay {
+  scale: 30 30;
+}
+
+.menu-nav {
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  visibility: hidden;
+  transition: visibility 0.2s ease;
+}
+
+#checkIcon:checked ~ .menu-nav {
+  visibility: visible;
+}
+
+.menu-nav ul li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.menu-nav ul li label{
+  display: inline-block;
+  color: #12a1e5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 8px 8px 8px 20%;
+  cursor: pointer;
+  width: 100%;
+}
+
+#check-1:checked ~ label, #check-2:checked ~ label,
+#check-3:checked ~ label,
+#check-4:checked ~ label {
+  color: black;
+  background: #eee;
+}

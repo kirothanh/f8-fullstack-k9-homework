@@ -1,0 +1,149 @@
+body {
+  background: #313642;
+}
+
+.container {
+  position: relative;
+  width: 240px;
+  height: 140px;
+  margin: 120px auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 2;
+}
+
+.lt-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 70px solid #cf4a43;
+  border-right: 120px solid transparent;
+  border-left: 120px solid transparent;
+  top: 0;
+  transform-origin: top;
+  transition: transform 0.3s linear;
+}
+
+.lt-topFake {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 70px solid #cf4a43;
+  border-right: 120px solid transparent;
+  border-left: 120px solid transparent;
+  top: 0;
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.lt-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 140px solid #e2514b;
+  border-right: 240px solid transparent;
+  left: 0;
+  bottom: 0;
+}
+
+.lt-left::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 140px solid #e85f57;
+  border-right: 240px solid transparent;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.hcn {
+  position: absolute;
+  width: 200px;
+  height: 140px;
+  background: #fff;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  visibility: hidden;
+  transition-property: transform, visibility;
+  transition: 0.5s ease-out;
+  transition-delay: 0.5s;
+}
+
+.overlay:hover ~ .lt-top {
+  transform: rotateX(180deg);
+}
+
+.overlay:hover ~ .hcn {
+  height: 160px;
+  bottom: 70px;
+  visibility: visible;
+}
+
+.overlay:not(:hover) ~ .lt-top {
+  transition-delay: 1s;
+}
+
+.hcn .head {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  height: 10px;
+  overflow: hidden;
+}
+
+.hcn .child-Head {
+  width: 10px;
+  height: 10px;
+  background: #b14e55;
+  transform: skew(-28deg, 0deg);
+}
+
+.hcn .hcn-tren {
+  width: 60px;
+  height: 10px;
+  background: #b14e55;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.hcn .hcn-duoi {
+  width: 30px;
+  height: 10px;
+  background: #b14e55;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.hcn .hcn-circle {
+  width: 30px;
+  height: 30px;
+  background: #b14e555b;
+  border-radius: 50%;
+  margin-left: 80%;
+  transform: translateY(45px);
+}
+
+.shadow {
+  position: absolute;
+  width: 240px;
+  height: 0px;
+  box-shadow: 0 0 15px 10px #000;
+  transition: all 0.5s ease;
+  bottom: 0px;
+  transform: translateY(70px);
+}
+
+.overlay:hover ~ .shadow {
+  transform: translateY(30px);
+} 
