@@ -1,0 +1,575 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --font-primary: "Rajdhani", sans-serif;
+  --font-secondary: "Titillium Web", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/landing-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-decoration {
+  position: fixed;
+  width: 64%;
+  height: 140%;
+  border-radius: 50%;
+  background-image: url(../img/dot-texture.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: var(--white-color);
+  top: -20%;
+  right: -32%;
+}
+
+/* Left */
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.land-content {
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.land-content .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.land-content .logo img {
+  width: 42px;
+  height: 60px;
+}
+
+.land-content__title {
+  margin-top: 36px;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.land-content__heading {
+  position: relative;
+  margin-top: -40px;
+  font-family: var(--font-secondary);
+  font-size: 104px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.land-content__desc {
+  width: 384px;
+  margin: 30px auto 0;
+  font-size: 16px;
+  line-height: 1.333;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.actions .login-action, .actions .register-action {
+  width: 180px;
+  padding: 15px 30px;
+  border: 1px solid var(--white-color);
+  font-family: var(--font-primary);
+  font-size: 1.125rem;
+  line-height: 1.3333333333em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.actions .login-action {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.actions .register-action {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+input[id="login"]:checked ~ .landing-inner .actions .login-action {
+  color: black;
+  background-color: #fff;
+}
+
+input[id="register"]:checked ~ .landing-inner .actions .register-action {
+  color: black;
+  background-color: #fff;
+}
+
+
+/* Form */
+.form-inner {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.land-form {
+  width: 484px;
+  padding: 64px;
+  border-radius: 12px;
+  background: var(--white-color);
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+}
+
+.login-form,
+.register-form {
+    transform: translate(100%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    transition-property: transform, opacity, visibility;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+/* Chuyen Login And Register */
+input[type="radio"]#login:checked ~ .landing-inner .form-wrap .login-form,
+input[type="radio"]#register:checked ~ .landing-inner .form-wrap .register-form {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+}
+/* End Chuyen Login And Register */
+
+.login-form .rocket {
+  position: absolute;
+  left: -80px;
+  top: -68px;
+}
+
+.form-login h5 {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.form-login .form {
+  margin-top: 76px;
+}
+
+.form .item {
+  position: relative;
+  margin-top: 28px;
+}
+
+.item input {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: all 0.3s linear;
+}
+
+.item .input-placeholder {
+  z-index: 1;
+  position: absolute;
+  top: 12px;
+  left: 23px;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  color: #b0b2cc;
+  transition: all 0.3s linear;
+}
+
+.form-input input {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-input input:focus {
+  border: 1px solid #6570ea;
+}
+
+.form-input input:focus ~ .input-placeholder {
+  transform: translate(-10px, -21px);
+  font-size: 12px;
+  background: white;
+  padding: 1px 5px;
+  border-radius: 12px;
+}
+
+.form-input input:not(:placeholder-shown) ~ .input-placeholder {
+  transform: translate(-10px, -21px);
+  font-size: 12px;
+  background: white;
+  padding: 1px 5px;
+  border-radius: 12px;
+}
+
+.form .remember {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember .remember-me {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.remember-me label {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.remember-me label .icon-mark {
+  display: none;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  transition: all 0.3s ease;
+}
+
+.remember-me label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.remember-me #rememberM:checked ~ label::before {
+  background: #23d2e2;
+  border: 1px solid #23d2e2;
+}
+
+.remember-me #rememberM:checked ~ label .icon-mark {
+  display: block;
+  color: white;
+}
+
+
+.remember .fg-title {
+  color: #adafca;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remember .fg-title:hover {
+  color: #23d2e2;
+}
+
+.form .btn-login {
+  margin-top: 28px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 14px 20px;
+  background: #615dfa;
+  color: white;
+  border-radius: 12px;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  box-shadow: 1px 3px 3px 3px #ebebfe;
+  cursor: pointer;
+}
+
+.form .btn-login:hover {
+  background: #524cf7;
+}
+
+.form-login .lined-text {
+  margin-top: 40px;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+  color: #424361;
+  position: relative;
+  text-align: center;
+}
+
+.form-login .lined-text::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  top: 7px;
+  right: 0;
+  background: #eaeaf5;
+}
+
+.form-login .lined-text::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  top: 7px;
+  left: 0;
+  background: #eaeaf5;
+}
+
+.form-login .socials {
+  margin-top: 30px;
+}
+
+.form-login .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-login .socials div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.socials .facebook {
+  background: #3763d2;
+  cursor: pointer;
+}
+
+.socials .facebook i {
+  color: #fff;
+}
+
+.socials .twitter {
+  background: #1abcff;
+  cursor: pointer;
+}
+
+.socials .twitter i {
+  color: #fff;
+}
+
+.socials .twitch {
+  background: #7b5dfa;
+  cursor: pointer;
+}
+
+.socials .twitch i {
+  color: #fff;
+}
+
+.socials .youtube {
+  background: #fd434f;
+  cursor: pointer;
+}
+
+.socials .youtube i {
+  color: #fff;
+}
+
+
+
+
+
+/* Register Form */
+.register-form .rocket {
+  position: absolute;
+  left: -80px;
+  top: -40px;
+}
+
+.form-register h5 {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.form-register .form {
+  margin-top: 76px;
+}
+
+.form .item {
+  position: relative;
+  margin-top: 28px;
+}
+
+.item input {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: all 0.3s linear;
+}
+
+.item .input-placeholder {
+  z-index: 1;
+  position: absolute;
+  top: 12px;
+  left: 23px;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  color: #b0b2cc;
+  transition: all 0.3s linear;
+}
+
+.form-input input {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-input input:focus {
+  border: 1px solid #6570ea;
+}
+
+.form-input input:focus ~ .input-placeholder {
+  transform: translate(-10px, -21px);
+  font-size: 12px;
+  background: white;
+  padding: 1px 5px;
+  border-radius: 12px;
+}
+
+.form-input input:not(:placeholder-shown) ~ .input-placeholder {
+  transform: translate(-10px, -21px);
+  font-size: 12px;
+  background: white;
+  padding: 1px 5px;
+  border-radius: 12px;
+}
+
+.form .send {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.send .send-me {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.send-me label {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.send-me label .icon-mark {
+  display: none;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  transition: all 0.3s ease;
+}
+
+.send-me label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.send-me #sendM:checked ~ label::before {
+  background: #23d2e2;
+  border: 1px solid #23d2e2;
+}
+
+.send-me #sendM:checked ~ label .icon-mark {
+  display: block;
+  color: white;
+}
+
+.form .btn-register {
+  margin-top: 28px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 14px 20px;
+  background: #23d2e2;
+  color: white;
+  border-radius: 12px;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  box-shadow: 1px 3px 3px 3px #ebebfe;
+  cursor: pointer;
+}
+
+.form .btn-register:hover {
+  background: #26bbc9;
+}
+
+.form-register .register-footer {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 12.9px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+}
+
+.register-footer a {
+  color: #26bbc9;
+  font-weight: 900;
+  text-decoration: none;
+}
