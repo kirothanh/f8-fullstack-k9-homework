@@ -1,0 +1,85 @@
+/* max-width: 996px */
+@media screen and (max-width: 996.98px) {
+  .header-container {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .header-container .header-logo {
+    font-size: 22px;
+  }
+
+  .header-book .icon {
+    margin-right: 20px;
+  }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768.98px) {
+  .header-container {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .header-container .header-list {
+    display: none;
+  }
+
+  .header-container .toggle-menu {
+    display: block;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #222;
+    transition: all 0.4s ease;
+  }
+
+  .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+    color: #aaa;
+  }
+
+  #check-header:checked ~ .navbar {
+    top: 99%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .packages-content {
+    flex-direction: column;
+  }
+
+  .packages-content .textPack, .packages-content .buttonPack {
+    width: 100%;
+  }
+
+  .about .about-wrap {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    position: relative;
+  }
+
+  .contact-info iframe {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+  }
+}
