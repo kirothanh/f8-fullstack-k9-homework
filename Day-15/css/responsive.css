@@ -1,0 +1,105 @@
+@media screen and (max-width: 1187px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header .header-content {
+    display: none;
+  }
+  .header .searchRes {
+    display: flex;
+    align-items: center;
+  }
+  .header .searchRes img {
+    width: 20px;
+  }
+  .header .searchRes input {
+    outline: none;
+    padding-left: 18px;
+    height: 32px;
+  }
+  .header .searchRes input::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    color: #c8c8c8;
+  }
+  .header .bars {
+    display: block;
+    right: 0;
+  }
+  .main .sidebar {
+    display: none;
+  }
+  .main .box-container {
+    width: 100%;
+  }
+  .mobile-header .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+  .mobile-header .menu-drawer {
+    display: block;
+    position: fixed;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    padding: 40px;
+  }
+  .mobile-header .menu-drawer h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .mobile-header .menu-drawer .expl-list .expl-item {
+    padding: 10px 0;
+  }
+  .mobile-header .menu-drawer .expl-list .expl-item a {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-header .menu-drawer .expl-list .expl-item a img {
+    margin-right: 10px;
+  }
+  .mobile-header .menu-drawer .expl-list .expl-item:last-child {
+    border-bottom: 1px solid #000000;
+  }
+  .mobile-header .menu-drawer .list-wrap li {
+    padding: 6px 0;
+  }
+  .mobile-header .menu-drawer .list-wrap li .basket {
+    margin-right: 20px;
+  }
+  .mobile-header .check-drawer:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-header .check-drawer:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 998px) {
+  .main .box-container {
+    grid-template-areas: "box-sales  box-sales  box-sales  box-sales" "box-summer box-summer  box-summer box-summer" "box-curly  box-white  box-pink box-brown" "box-bluehair  box-bluehair  box-redhair box-redhair";
+  }
+  .main .box-container .box-bluehair .title {
+    top: 60px;
+  }
+  .main .box-container .box-redhair {
+    background: #ebe7e4;
+  }
+  .main .box-container .box-redhair .title {
+    top: 60px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .main .box-container {
+    grid-template-areas: "box-sales  box-sales  box-sales  box-curly" "box-summer box-summer  box-summer box-white" "box-bluehair box-bluehair box-bluehair box-brown" "box-redhair  box-redhair  box-redhair box-pink";
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

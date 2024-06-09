@@ -1,0 +1,374 @@
+@import "./partials/variable";
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 90%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .header-logo { 
+    width: 20%;
+    position: relative;
+    font-size: 21.997px;
+    font-weight: 600;
+    
+    .first {
+      background:#F4DE4D;
+      font-size: 21.997px;
+      padding: 8px 2px 8px 27px;
+      border-radius: 50%;
+    }
+
+    .line {
+      width: 12.57px;
+      height: 3.142px;
+      background: $primary-color;
+      position: absolute;
+      left: 67px;
+      top: 4px;
+    }
+  }
+
+  .searchRes {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    .search {
+      label {
+        display: flex;
+        align-items: center;
+  
+        img {
+          width: 20px;
+        }
+  
+        input {
+          outline: none;
+          padding-left: 18px;
+          height: 32px;
+  
+          &::placeholder {
+            font-size: 15px;
+            font-weight: bold;
+            color: #c8c8c8;
+          }
+        }
+      }
+    }
+  
+    .header-list {
+      display: flex;
+      align-items: center;
+  
+      .list-wrap {
+        display: flex;
+        align-items: center;
+  
+        li {
+          margin-left: 44px;
+          padding-bottom: 4px;
+
+          &:first-child {
+            border-bottom: 2px solid $primary-color;
+          }
+  
+          &:hover {
+            border-bottom: 2px solid $primary-color;
+          }
+  
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          a {
+            font-size: 17.807px;
+            font-weight: 400;
+          }
+  
+          .basket {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+          }
+  
+          .person {
+            margin-left: 26px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .bars {
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: $primary-color;
+  }
+  
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  height: 100%;
+
+  .sidebar {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .explore {
+
+      .main-title {
+        font-size: 31.424px;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+
+      ul {
+        margin-top: 46px;
+
+        li {
+          
+          padding: 15px 0px;
+
+          a {
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            font-size: 16.456px;
+            font-weight: 500;
+          }
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .help {
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .box-container {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+      "box-sales  box-sales  box-pink box-brown"
+      "box-summer box-summer box-pink box-brown"
+      "box-curly  box-white  box-bluehair box-bluehair"
+      "box-curly  box-white  box-redhair box-redhair";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  
+    .box-sales {
+      grid-area: box-sales;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 15.712px;
+      background: #BCE7F0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      h3 {
+        font-size: 31.424px;
+        font-weight: 800;
+        text-transform: uppercase;
+        z-index: 1;
+      }
+
+      img {
+        position: absolute;
+      }
+
+      .thunder_bot {
+        bottom: 0;
+        left: 90px;
+      }
+
+      .thunder_pink_left {
+        left: 10px;
+      }
+
+      .thunder_pink_right {
+        top: 0px;
+        right: 120px;
+      }
+
+      .thunder_white_bot {
+        bottom: 0;
+        right: 130px;
+      }
+
+      .thunder_white_top {
+        top: 0;
+        left: 150px;
+      }
+
+      .thunder_yl_top {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .box-summer {
+      grid-area: box-summer;
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .box-curly {
+      grid-area: box-curly;
+      .curly_hair {
+        width: 100%;
+        height: 100%;
+        border-radius: 15.712px;
+        object-fit: cover;
+      }
+    }
+
+    .box-white {
+      grid-area: box-white;
+      .white_hair {
+        width: 100%;
+        height: 100%;
+        border-radius: 15.712px;
+        object-fit: cover;
+      }
+    }
+
+    .box-pink {
+      grid-area: box-pink;
+      .pink_hair {
+        width: 100%;
+        height: 100%;
+        border-radius: 15.712px;
+      }
+    }
+
+    .box-brown {
+      grid-area: box-brown;
+      .brown_hair {
+        width: 100%;
+        height: 100%;
+        border-radius: 15.712px;
+      }
+    }
+
+    .box-bluehair {
+      grid-area: box-bluehair;
+      width: 100%;
+      height: 100%;
+      border-radius: 15.712px;
+      background: #f4de4d;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+
+      .title {
+        position: absolute;
+        padding-left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        h4 {
+          color: #001AA2;
+          font-size: 26px;
+          font-weight: 800;
+          text-transform: capitalize;
+        }
+
+        p {
+          font-size: 15.712px;
+          font-weight: 400;
+          padding-top: 10px;
+        }
+      }
+
+      .img {
+        position: absolute;
+        object-fit: cover;
+        right: 0;
+        bottom: -5px;
+      }
+    }
+
+    .box-redhair {
+      grid-area: box-redhair;
+      width: 100%;
+      height: 100%;
+      border-radius: 15.712px;
+      background: #e4dfdb;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+
+      .title {
+        position: absolute;
+        padding-left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        h4 {
+          color: #FD2E24;
+          font-size: 26px;
+          font-weight: 800;
+        }
+
+        p {
+          font-size: 15.712px;
+          font-weight: 400;
+          padding-top: 10px;
+        }
+      }
+
+      .img {
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+      }
+    }
+  }
+}

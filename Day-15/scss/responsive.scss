@@ -1,0 +1,152 @@
+@import "./partials/variable";
+
+@media screen and (max-width: 1187px) {
+  .header {
+    justify-content: space-between;
+
+    .header-content {
+      display: none;
+    }
+
+    .searchRes {
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 20px;
+      }
+
+      input {
+        outline: none;
+        padding-left: 18px;
+        height: 32px;
+
+        &::placeholder {
+          font-size: 15px;
+          font-weight: bold;
+          color: #c8c8c8;
+        }
+      }
+    }
+
+    .bars {
+      display: block;
+      right: 0;
+    }
+  }
+
+  .main {
+    .sidebar {
+      display: none;
+    }
+
+    .box-container {
+      width: 100%;
+    }
+
+  }
+
+  .mobile-header {
+    .menu-overlay {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      inset: 0;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+      display: block;
+      position: fixed;
+      inset: 0 40% 0 0;
+      z-index: 2;
+      background: #fff;
+      transform: translateX(-100%);
+      transition: 0.5s ease;
+      padding: 40px;
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .expl-list {
+        .expl-item {
+          padding: 10px 0;
+
+          a {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 10px;
+            }
+          }
+
+          &:last-child {
+            border-bottom: 1px solid $primary-color;
+          }
+        }
+      }
+
+      .list-wrap {
+        li {
+          padding: 6px 0;
+
+          .basket {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .check-drawer:checked ~ .menu-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .check-drawer:checked ~ .menu-drawer {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .main {
+    .box-container {
+      grid-template-areas:
+      "box-sales  box-sales  box-sales  box-sales"
+      "box-summer box-summer  box-summer box-summer"
+      "box-curly  box-white  box-pink box-brown"
+      "box-bluehair  box-bluehair  box-redhair box-redhair";
+
+
+      .box-bluehair {
+        .title {
+          top: 60px;
+        }
+      }
+
+      .box-redhair {
+        background: #ebe7e4;
+        .title {
+          top: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .main {
+    .box-container {
+      grid-template-areas:
+      "box-sales  box-sales  box-sales  box-curly"
+      "box-summer box-summer  box-summer box-white"
+      "box-bluehair box-bluehair box-bluehair box-brown"
+      "box-redhair  box-redhair  box-redhair box-pink";
+    }
+  }
+}

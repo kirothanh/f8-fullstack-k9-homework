@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./css/bvn15.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-logo">
+          <div class="line"></div>
+          <span class="first">C</span>aped
+        </div>
+
+        <label for="searchHeader" class="searchRes">
+          <img src="./img/kinh_lup.png" alt="kinh lup">
+          <input type="text" id="searchHeader" placeholder="Search store">
+        </label>
+        
+        <div class="header-content">
+          <div class="search">
+            <label for="searchHeader">
+              <img src="./img/kinh_lup.png" alt="kinh lup">
+              <input type="text" id="searchHeader" placeholder="Search store">
+            </label>
+          </div>
+          <div class="header-list">
+            <ul class="list-wrap">
+              <li><a href="#!">products</a></li>
+              <li><a href="#!">story</a></li>
+              <li><a href="#!">manufacturing</a></li>
+              <li><a href="#!">packaging</a></li>
+              <li>
+                  <img src="./img/basket.svg" alt="basket" class="basket" />
+                  <img src="./img/person.svg" alt="person" class="person" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <label for="check-drawer" class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </header>
+      <!-- End Header -->
+
+      <!-- Tablet/Mobile Header -->
+      <header class="mobile-header">
+        <input
+          type="checkbox"
+          name=""
+          id="check-drawer"
+          class="check-drawer"
+          hidden
+        />
+
+        <!-- Overlay -->
+        <label for="check-drawer" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer" hidden>
+          <h3 class="main-title">Explore</h3>
+    
+          <ul class="expl-list">
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/thunder.svg" alt="thunder" />
+                <span class="exp-title">New in</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/clothing.svg" alt="clothing" />
+                <span class="exp-title">Clothing</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/shoes.svg" alt="shoes" />
+                <span class="exp-title">shoes</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/accessories.svg" alt="accessories" />
+                <span class="exp-title">accessories</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/active.svg" alt="active" />
+                <span class="exp-title">activewear</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/gift.svg" alt="gift" />
+                <span class="exp-title">gifts & living</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/diamond.svg" alt="diamond" />
+                <span class="exp-title">Inspiration</span>
+              </a>
+            </li>
+            <li class="expl-item">
+              <a href="#!">
+                <img src="./img/help.svg" alt="help">
+                <span>Help Center</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list-wrap">
+            <li><a href="#!">products</a></li>
+            <li><a href="#!">story</a></li>
+            <li><a href="#!">manufacturing</a></li>
+            <li><a href="#!">packaging</a></li>
+            <li>
+                <img src="./img/basket.svg" alt="basket" class="basket" />
+                <img src="./img/person.svg" alt="person" class="person" />
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div class="main">
+        <!-- Side bar -->
+        <div class="sidebar">
+          <div class="explore">
+            <h3 class="main-title">Explore</h3>
+  
+            <ul class="expl-list">
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/thunder.svg" alt="thunder" />
+                  <span class="exp-title">New in</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/clothing.svg" alt="clothing" />
+                  <span class="exp-title">Clothing</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/shoes.svg" alt="shoes" />
+                  <span class="exp-title">shoes</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/accessories.svg" alt="accessories" />
+                  <span class="exp-title">accessories</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/active.svg" alt="active" />
+                  <span class="exp-title">activewear</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/gift.svg" alt="gift" />
+                  <span class="exp-title">gifts & living</span>
+                </a>
+              </li>
+              <li class="expl-item">
+                <a href="#!">
+                  <img src="./img/diamond.svg" alt="diamond" />
+                  <span class="exp-title">Inspiration</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="help">
+            <a href="#!">
+              <img src="./img/help.svg" alt="help">
+              <span>Help Center</span>
+            </a>
+          </div>
+        </div>
+        <!-- End Side bar -->
+
+
+        <div class="box-container">
+          <div class="box-sales">
+            <h3>get up to 50% off</h3>
+            <img src="./img/thunder_bot.png" alt="thunder_bot" class="thunder_bot">
+            <img src="./img/thunder_pink_left.png" alt="thunder_pink_left" class="thunder_pink_left">
+            <img src="./img/thunder_pink_right.png" alt="thunder_pink_right" class="thunder_pink_right">
+            <img src="./img/thunder_white_bot.png" alt="thunder_white_bot" class="thunder_white_bot">
+            <img src="./img/thunder_white_top.png" alt="thunder_white_top" class="thunder_white_top">
+            <img src="./img/thunder_yl_top.png" alt="thunder_yl_top" class="thunder_yl_top">
+          </div>
+          <div class="box-summer">
+            <img src="./img/summer.png" alt="summer">
+          </div>
+
+          <div class="box-pink">
+            <img src="./img/pink_hair.png" alt="pink_hair" class="pink_hair">
+          </div>
+          <div class="box-brown">
+            <img src="./img/brown_hair.png" alt="brown_hair" class="brown_hair">
+          </div>
+
+          <div class="box-curly">
+            <img src="./img/curly_hair.png" alt="curly_hair" class="curly_hair">
+          </div>
+          <div class="box-white">
+            <img src="./img/white_hair.png" alt="white_hair" class="white_hair">
+          </div>
+
+          <div class="box-bluehair">
+            <div class="title">
+              <h4>trending & hot</h4>
+              <p>A collection of most trending items.</p>
+            </div>
+            <div class="img">
+              <img src="./img/blue_hair.png" alt="blue_hair">
+            </div>
+          </div>
+          <div class="box-redhair">
+            <div class="title">
+              <h4>Buy it for the first time</h4>
+              <p>New in store. Try it before anyone else.</p>
+            </div>
+            <div class="img">
+              <img src="./img/red_hair.png" alt="red_hair">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
