@@ -7,56 +7,53 @@ body {
 // Chop Main
 .hero {
   .hero-text {
-    padding-top: 130px;
-
     h1 {
       color: $primaryColor;
       font-size: 36.667px;
       font-weight: 800;
-      line-height: 131.523%;
+      line-height: 1.31;
     }
     h2 {
       color: $primaryColor;
       font-size: 43.333px;
       font-weight: 800;
+      max-width: 70%;
     }
     p {
       color: $primaryColor;
       font-size: 16px;
       font-weight: 400;
-      line-height: 20.417px;
+      line-height: 1.27;
+      padding-top: 27px;
     }
   }
 
   .hero-image {
+    background: #dcffca;
+    width: 50vw;
+    border-radius: 16.667px 0px 0px 16.667px;
+    padding: 55px 0;
+    position: relative;
+    min-height: 708px;
+
     img {
-      margin-left: -60px;
+      width: 525px;
+      margin-top: 50px;
+      margin-left: -120px;
     }
 
     span {
-      position: absolute;
-      display: inline-block;
-      transform: rotate(90deg);
-      color: var(--Green-1000, #216000);
-      font-size: 10vw;
+      font-size: 156px;
+      color: #22600025;
       font-weight: 800;
-      line-height: 100%;
-      right: -100px;
-      top: 250px;
-      opacity: 0.15;
+      line-height: 1;
+      rotate: 90deg;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 10%;
+      display: inline-block;
     }
-  }
-
-  .nen-main {
-    width: 50%;
-    height: 90%;
-    position: absolute;
-    right: 0;
-    background: $thirdColor;
-    top: 0;
-    z-index: -3;
-    margin-top: 86px;
-    border-radius: 16.667px 0px 0px 16.667px;
   }
 }
 
@@ -74,13 +71,13 @@ body {
       font-size: 31.667px;
       font-style: normal;
       font-weight: 800;
-      line-height: 131.523%; 
+      line-height: 131.523%;
       width: 50%;
       margin: 0 auto;
     }
 
     p {
-      color: var(--Content, #2C2C2C);
+      color: var(--Content, #2c2c2c);
       text-align: center;
       font-family: Inter;
       font-size: 16px;
@@ -106,7 +103,7 @@ body {
       display: block;
       width: 235px;
       height: 235px;
-      background: #DCFFCA;
+      background: #dcffca;
       border-radius: 50%;
       top: -30%;
       left: 0;
@@ -118,22 +115,24 @@ body {
       display: block;
       width: 235px;
       height: 235px;
-      background: #FFD5BD;
+      background: #ffd5bd;
       border-radius: 50%;
       bottom: -30%;
       right: 0;
       transform: translateX(50%);
     }
 
-    .box-1, .box-2, .box-3 {
+    .box-1,
+    .box-2,
+    .box-3 {
       position: relative;
       border-radius: 3.333px;
-      background:#FFF;
+      background: #fff;
       box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
       padding: 33px 35px;
       img {
         border-radius: 10px;
-        background: #FFF0E7;
+        background: #fff0e7;
         padding: 20px;
       }
       h4 {
@@ -146,7 +145,7 @@ body {
         font-size: 20px;
         font-weight: 400;
         line-height: 30.833px;
-      }    
+      }
     }
     .box-2 {
       padding: 50px 35px;
@@ -168,19 +167,24 @@ body {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cột */
-    grid-template-rows: auto ; /* 2 hàng */
+    grid-template-rows: auto; /* 2 hàng */
     gap: 80px;
 
-    .product-1, .product-2, .product-3, .product-4, .product-5, .product-6 {
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4,
+    .product-5,
+    .product-6 {
       .product-img {
         position: relative;
         display: flex;
         justify-content: center;
         .circle-background {
           position: absolute;
-          width: 75%; 
-          height: 100%; 
-          background-color: #FFBA94; 
+          width: 75%;
+          height: 100%;
+          background-color: #ffba94;
           border-radius: 50%;
           margin-left: 0;
           margin-right: 0;
@@ -203,7 +207,7 @@ body {
         display: block;
         width: 40.833px;
         height: 1px;
-        background: #A3A3A3;
+        background: #a3a3a3;
         margin: 16px auto 16px auto;
       }
       .desc {
@@ -217,7 +221,7 @@ body {
         color: $primaryColor;
         font-size: 16.667px;
         font-weight: 400;
-        line-height: 21.667px; 
+        line-height: 21.667px;
         padding-top: 6px;
         span {
           font-size: 23.333px;
@@ -230,7 +234,7 @@ body {
         border: none;
         padding: 13.333px 11.667px;
         border-radius: 6.667px;
-        background: #46B20F;
+        background: #46b20f;
         color: #fff;
         margin-left: auto;
         margin-right: auto;
@@ -239,15 +243,15 @@ body {
       }
     }
 
-    .product-2, .product-5 {
+    .product-2,
+    .product-5 {
       .product-img {
         .circle-background {
-          background-color: #C5FFA8; 
+          background-color: #c5ffa8;
         }
       }
     }
   }
-
 }
 
 // News
@@ -288,7 +292,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
 
         .desc-left {
           margin: 0;
@@ -299,7 +302,7 @@ body {
 
         .desc-right {
           margin: 0;
-          color:#A3A3A3;
+          color: #a3a3a3;
           font-size: 15px;
           font-weight: 500;
 
@@ -309,7 +312,6 @@ body {
             margin-right: 10px;
           }
         }
-
       }
 
       .title-new {
@@ -361,11 +363,12 @@ body {
   }
 }
 
-// Protect 
+// Protect
 .protect {
   margin-top: 100px;
   position: relative;
-  
+  // background: #fff0e7;
+
   h3 {
     text-align: center;
     color: $primaryColor;
@@ -394,7 +397,7 @@ body {
     padding: 0 20px;
 
     .box-protect1 {
-      background:#FFF;
+      background: #fff;
       border-radius: 8.333px;
       height: 100%;
 
@@ -408,18 +411,18 @@ body {
         padding: 24px 27px;
 
         .title {
-          color:#E05000;
+          color: #e05000;
           text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
           font-size: 20px;
           font-weight: 600;
-          line-height: 26.667px; 
+          line-height: 26.667px;
           margin: 0;
           text-align: left;
           max-width: 100%;
         }
 
         .desc {
-          color: #19191B;
+          color: #19191b;
           font-size: 16px;
           font-weight: 400;
           line-height: 20.417px;
@@ -435,9 +438,8 @@ body {
   .nen-protect {
     position: absolute;
     min-width: 100%;
-    // left: -30%;
     height: 50%;
-    background: #FFF0E7;
+    background: #fff0e7;
     top: 60%;
     z-index: -1;
   }
@@ -522,7 +524,7 @@ body {
 
       .form-group {
         flex-grow: 1;
-        
+
         textarea {
           resize: none;
           width: 100%;
@@ -536,7 +538,7 @@ body {
 
       .form-btn {
         width: 100%;
-        display: flex; 
+        display: flex;
         justify-content: flex-end;
         button {
           border: none;
@@ -553,12 +555,12 @@ body {
 
 // Footer
 .footer {
-  background: #F2FFEC;
+  background: #f2ffec;
   padding: 63px 20px 0px;
   margin-top: 80px;
 
   .footer-inner {
-    border-bottom: 1px solid #A3A3A3;
+    border-bottom: 1px solid #a3a3a3;
     padding-bottom: 72px;
 
     .logo-footer {
@@ -616,71 +618,143 @@ body {
         justify-content: center;
         align-items: center;
         a {
-          background: #DCFFCA;
+          background: #dcffca;
           padding: 9px 11px 6px;
           border-radius: 50%;
           img {
             width: 100%;
           }
         }
-
       }
     }
   }
 }
 
-@media screen and (max-width: 1300px) { 
-  // Bua An
+@media screen and (max-width: 1400px) {
+  .hero {
+    .hero-image {
+      span {
+        font-size: 100px;
+        left: 6%;
+      }
+
+      img {
+        width: 432px;
+        margin-left: -60px;
+      }
+    }
+  }
+
   .eat-wrap {
     .box-card {
-      .circle, .circle-right {
+      .circle-right, .circle {
         display: none;
       }
     }
   }
 }
 
-@media screen and (max-width: 1199px) { 
-  // Chop-Main
-  .hero {
-    .hero-text {
-      margin-top: 50px;
-    }
-
-    .nen-main {
-      display: none;
+@media screen and (max-width: 1300px) {
+  // Bua An
+  .eat-wrap {
+    .box-card {
+      .circle,
+      .circle-right {
+        display: none;
+      }
     }
   }
 }
 
-@media screen and (max-width: 920px) { 
-  // Chop Main
+@media screen and (max-width: 1200px) {
   .hero {
     .hero-text {
-      padding: 0 60px;
+      h2 {
+        max-width: 90%;
+      }
     }
-  
     .hero-image {
       span {
-        position: relative;
-        display: inline;
-        transform: rotate(0);
-        color: var(--Green-1000, #216000);
-        font-size: 10vw;
-        font-weight: 800;
-        line-height: 100%;
-        top: -20px;
+        font-size: 100px;
+        top: -35px;
+        left: -5%;
+      }
+
+      img {
+        width: 350px;
+        margin-left: -30px;
       }
     }
   }
+}
 
+@media screen and (max-width: 1000px) {
+  .hero {
+    .hero-text {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      h2 {
+        max-width: 100%;
+        padding-top: 5px;
+      }
+      p {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .hero-image {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      img {
+        margin: 0;
+      }
+
+      span {
+        position: static;
+        rotate: 0deg;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .hero {
+    .hero-image {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      img {
+        margin: 0;
+      }
+
+      span {
+        position: static;
+        rotate: 0deg;
+        font-size: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
   // Bua An
   .eat-wrap {
     .box-card {
       flex-direction: column;
       padding: 0 20px;
 
-      .box-1, .box-2, .box-3 {
+      .box-1,
+      .box-2,
+      .box-3 {
         width: 100%;
       }
     }
@@ -699,7 +773,7 @@ body {
     }
   }
 
-  // Protect 
+  // Protect
   .protect {
     .nen-protect {
       display: none;
@@ -707,7 +781,36 @@ body {
   }
 }
 
+@media screen and (max-width: 857px) {
+  .contact {
+    .form {
+      .group-row {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .hero {
+    .hero-image {
+      display: block;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+        max-width: 70%;
+        display: block;
+      }
+
+      span {
+        rotate: 0deg;
+        font-size: 10rem;
+        display: block;
+      }
+    }
+  }
+
   // contact
   .contact {
     .image {
@@ -715,6 +818,10 @@ body {
     }
     .form {
       .group-row {
+        flex-direction: column;
+        .form-group {
+        }
+
         .form-btn {
           button {
             justify-content: center;
@@ -726,13 +833,18 @@ body {
   }
 }
 
-@media screen and (max-width: 650px) { 
+@media screen and (max-width: 650px) {
   // Products
   .products {
     .products-list {
       grid-template-columns: repeat(2, 1fr);
 
-      .product-1, .product-2, .product-3, .product-4, .product-5, .product-6 {
+      .product-1,
+      .product-2,
+      .product-3,
+      .product-4,
+      .product-5,
+      .product-6 {
         .product-title {
           font-size: 20px;
           width: 100%;
@@ -742,19 +854,40 @@ body {
   }
 }
 
-@media screen and (max-width: 567px) { 
-  .eat-wrap {
-    .box-text {
-      h3, p {
-        min-width: 100%;
+@media screen and (max-width: 567px) {
+  .hero {
+    .hero-image {
+      display: block;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+        max-width: 70%;
+        display: block;
+      }
+
+      span {
+        rotate: 0deg;
+        font-size: 100px;
+        display: block;
       }
     }
   }
 
 
+  .eat-wrap {
+    .box-text {
+      h3,
+      p {
+        min-width: 100%;
+      }
+    }
+  }
+
   // Protect {
   .protect {
-    h3, p {
+    h3,
+    p {
       max-width: 100%;
     }
     .box-protect {
@@ -766,11 +899,11 @@ body {
             background-size: cover;
           }
         }
-      }   
+      }
     }
   }
 
-  // Material 
+  // Material
   .material {
     .row {
       flex-direction: column;
@@ -780,7 +913,12 @@ body {
   // Products
   .products {
     .products-list {
-      .product-1, .product-2, .product-3, .product-4, .product-5, .product-6 {
+      .product-1,
+      .product-2,
+      .product-3,
+      .product-4,
+      .product-5,
+      .product-6 {
         .product-title {
           font-size: 10px;
           width: 100%;

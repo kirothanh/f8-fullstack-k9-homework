@@ -164,7 +164,19 @@
   }
 }
 
-
+@media screen and (max-width: 423px) {
+  .mobile-header {
+    .menu-drawer {
+      ul {
+        li {
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
