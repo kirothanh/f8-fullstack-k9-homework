@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginForm {
+  display: inline-block;
+  margin: 10px 0px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.loginForm:hover {
+  color: #ccc;
+}
+
+.modal-box {
+  position: fixed;
+  inset: 0;
+  display: none;
+}
+
+.modal-box .btn-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-box .overlay {
+  inset: 0;
+  z-index: 9998;
+  background: #6666665d;
+  position: fixed;
+}
+
+.modal-box .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 460px;
+  background: #fff;
+  z-index: 9999;
+  border-radius: 4px;
+}
+
+.modal img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal .modal-header .signIn {
+  background: #1a7900;
+  color: white;
+  width: 50%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.modal .modal-header .signUp {
+  width: 50%;
+  background: #ccc;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+/* Login */
+.account-exist {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+
+.modal .form-login {
+  padding: 20px;
+}
+
+/* Email */
+.form-login .email {
+  padding: 10px 0;
+}
+
+.form-login .email p {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.form-login .email input {
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.form-login .email input::placeholder {
+  font-size: 12px;
+}
+
+.form-login .email .text-Noti {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+/* End Email */
+
+/* Password */
+.form-login .password {
+}
+
+.form-login .password p {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.form-login .password .input-Pass {
+  position: relative;
+}
+
+.form-login .password .input-Pass input {
+  position: relative;
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.form-login .password input::placeholder {
+  font-size: 12px;
+}
+
+.form-login .password .input-Pass .eye,
+.form-login .password .input-Pass .eye-slash {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 5px;
+}
+
+.form-login .password .input-Pass .eye-slash {
+  display: none;
+}
+
+.form-login .password .text-Noti {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+/* End Password */
+
+.form-login .btn {
+  width: 100%;
+  outline: none;
+  background: #1a7900;
+  border: none;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 6px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+/* End Login */
+
+
+
+/* Sign Up */
+.modal .form-signUp {
+  padding: 20px;
+}
+
+.form-signUp .sub-title {
+  font-size: 14px;
+}
+
+/* Full Name */
+.form-signUp .fullname {
+  padding-top: 10px;
+}
+
+.form-signUp .fullname p {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.form-signUp .fullname input {
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.form-signUp .fullname input::placeholder {
+  font-size: 12px;
+}
+
+.form-signUp .fullname .text-Noti {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+/* End Full Name */
+
+/* Email */
+.form-signUp .email {
+}
+
+.form-signUp .email p {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.form-signUp .email input {
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.form-signUp .email input::placeholder {
+  font-size: 12px;
+}
+
+.form-signUp .email .text-Noti {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+/* End Email */
+
+/* Password */
+.form-signUp .password {
+}
+
+.form-signUp .password p {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.form-signUp .password .input-Pass {
+  position: relative;
+}
+
+.form-signUp .password .input-Pass input {
+  position: relative;
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.form-signUp .password input::placeholder {
+  font-size: 12px;
+}
+
+.password .input-Pass .eye,
+.password .input-Pass .eye-slash {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.form-signUp .password .input-Pass .eye-slash {
+  display: none;
+}
+
+.form-signUp .password .text-Noti {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+/* End Password */
+
+.accept-text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.accept-text span {
+  color: blue;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-signUp .btn {
+  width: 100%;
+  outline: none;
+  background: #1a7900;
+  border: none;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 6px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+/* End Sign Up */
+
+.modal .form-signUp {
+  display: none;
+}

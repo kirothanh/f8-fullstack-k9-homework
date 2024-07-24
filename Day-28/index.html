@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Link FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a href="#!" class="loginForm">Đăng nhập</a>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ipsam temporibus deserunt sapiente provident fugit veniam rerum veritatis nesciunt repellendus ullam iste, velit, non commodi ut sit nam, porro quis nemo quidem deleniti magnam omnis numquam. Veritatis quos unde nesciunt odit explicabo itaque nemo quidem nulla? Quam hic officia maxime?
+  </p>
+
+  <div class="modal-box">
+    <div class="modal">
+      <span class="btn-close">&times;</span>
+      <img src="./img/logo.png" alt="logo">
+      <div class="modal-header">
+        <div class="signIn">Đăng nhập</div>
+        <div class="signUp">Đăng ký</div>
+      </div>
+      <form action="" class="form-login">
+        <p class="account-exist">Account not existed</p>
+        <div class="email">
+          <p>Email</p>
+          <input type="email" placeholder="Email" class="email-input">
+          <p class="text-Noti">Vui lòng nhập thông tin</p>
+        </div>
+        <div class="password">
+          <p>Mật khẩu</p>
+          <div class="input-Pass">
+            <input type="password" placeholder="Mật khẩu" class="password-input">
+            <span class="eye"><i class="fa-solid fa-eye"></i></span>
+            <span class="eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+          <p class="text-Noti">Vui lòng nhập thông tin</p>
+        </div>
+        <button type="submit" class="btn">Đăng nhập</button>
+      </form>
+
+      <form action="" class="form-signUp">
+        <p class="sub-title">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+        <div class="fullname">
+          <p>Họ và tên</p>
+          <input type="text" placeholder="Họ và tên" class="fullname-input">
+          <p class="text-Noti">Vui lòng nhập thông tin</p>
+        </div>
+        <div class="email">
+          <p>Email</p>
+          <input type="email" placeholder="Email" class="email-input">
+          <p class="text-Noti">Vui lòng nhập thông tin</p>
+        </div>
+        <div class="password">
+          <p>Mật khẩu</p>
+          <div class="input-Pass">
+            <input type="password" placeholder="Mật khẩu" class="password-input">
+            <span class="eye"><i class="fa-solid fa-eye"></i></span>
+            <span class="eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+          <p class="text-Noti">Vui lòng nhập thông tin</p>
+        </div>
+        <p class="accept-text">Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi <span>điều kiện về qui định và chính sách của Dân trí</span></p>
+        <button type="submit" class="btn">Đăng ký</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
