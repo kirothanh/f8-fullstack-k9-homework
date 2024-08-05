@@ -42,7 +42,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 0%;
+  width: 0;
   background: red;
 }
 
@@ -60,9 +60,10 @@
   position: absolute;
   top: -100%;
   left: 0;
-  translate: -50% 0px;
+  translate: -25% -12px;
   background: #000;
   color: #fff;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   display: none;
+  padding: 2px;
 }
